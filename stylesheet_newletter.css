@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #315659;
+    color: #2B303A;
+}
+
+.navbar {
+    background-color: #253031; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    align-items: left;  
+    color: white;
+} 
+  
+.container-fluid {
+    position: relative;
+    z-index: 100; /* Ensures navbar stays on top of other content */
+}
+
+.navbar .navbar-expand-lg .navbar-dark .bg-dark .dropdown-item {
+    position: relative;
+    z-index: 500;
+    align-items: right;
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    min-height: 400px;
+    max-height: 500px; /* Adjust the min-height as needed to maintain a consistent size */
+    color: #2B303A;
+
+}
+
+/* Ensure the carousel takes the full width */
+.carousel {
+    width: 65%;
+    max-width: 65%; /* Ensures the carousel does not exceed the width of the viewport */
+    position: relative; /* This is necessary if you're setting a z-index */
+    z-index: 1; 
+    /* Ensures it's behind the dropdown, adjust as necessary */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 10px; /* Adds some space around the text */
+}
+
+
+.table {
+    width:70%;
+    max-width: 70%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px; /* Adjust as needed */
+    overflow: hidden; /* Ensures the content does not overflow the rounded corners */
+    }
+    
+    /* th, td {
+        border-bottom: 1px solid black;
+        padding: 10px; */
+    
+    
+    /* Remove bottom border for the last row to maintain the rounded corner effect */
+tr:last-child td {
+        border-bottom: none;
+    }
+    
+
+/* Optional: Ensuring the body has no margin or padding that might restrict the width */
+/* body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll caused by elements wider than the screen */
+/* } */
